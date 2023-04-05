@@ -1,3 +1,21 @@
-.striked_class{
+.striked{
     text-decoration: line-through;
+}
+body{
+    background-color: black;
+}
+#to_do_tasks {
+    background-color:lightblue;
+}
+#tasks_done {
+    background-color:lightgreen;
+}
+.card li{
+    border-bottom: 1px solid gray;
+}
+.not_show{
+    display: none !important;;
+}
+.show{
+    display:block;
 }

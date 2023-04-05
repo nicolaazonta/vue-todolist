@@ -25,43 +25,58 @@ createApp({
             tasks: [
                 {
                     title: 'cibo da comprare',
-                    text: 'banane'
+                    text: 'banane',
+                    done: false
                 },
                 {
                     title: 'sport da fare',
-                    text: 'nuoto'
+                    text: 'nuoto',
+                    done: false
                 },
                 {
                     title: 'sport da fare',
-                    text: 'corsa'
+                    text: 'corsa',
+                    done: false
                 },
                 {
                     title: 'cibo da comprare',
-                    text: 'couscous'
+                    text: 'couscous',
+                    done: false
                 },
                 {
                     title: 'cibo da comprare',
-                    text: 'lenticchie'
+                    text: 'lenticchie',
+                    done: false
                 },
                 {
                     title: 'sport da fare',
-                    text: 'bici'
+                    text: 'bici',
+                    done: false
                 },
                 {
                     title: 'cibo da comprare',
-                    text: 'cipolle'
+                    text: 'cipolle',
+                    done: false
                 },
                 {
                     title: 'cibo da comprare',
-                    text: 'carote'
+                    text: 'carote',
+                    done: false
                 },
             ]
         }        
     },
-    methods:{
-        striked(i){
-            console.log('clicked');
-            this.tasks[i].title = striked_class;
+    methods: {
+        taskDone(task,i) {
+            task.done=true;
+            console.log(task);
+        },
+        taskUnDone(task,i) {
+            task.done=false;
+            console.log(task);
+        },
+        addTask(){
+            console.log('aggiungi');
         }
     }
 }).mount('#app')
