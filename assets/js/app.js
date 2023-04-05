@@ -22,6 +22,7 @@ createApp({
     data(){
         return{
             isActive: null,
+            taskText: null,
             tasks: [
                 {
                     title: 'cibo da comprare',
@@ -77,6 +78,13 @@ createApp({
         },
         addTask(){
             console.log('aggiungi');
+            this.tasks.unshift(
+                {
+                    title: 'altro',
+                    text: this.taskText,
+                    done:false
+                }
+            )
         }
     }
 }).mount('#app')
